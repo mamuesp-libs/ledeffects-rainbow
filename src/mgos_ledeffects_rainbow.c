@@ -54,7 +54,7 @@ void mgos_ledeffects_rainbow(void* param, mgos_rgbleds_action action)
     }
 }
 
-bool mgos_rainbow_init(void) {
+bool mgos_ledeffects_rainbow_init(void) {
   LOG(LL_INFO, ("mgos_rainbow_init ..."));
   ledmaster_add_effect("ANIM_RAINBOW", mgos_ledeffects_rainbow);
   return true;
